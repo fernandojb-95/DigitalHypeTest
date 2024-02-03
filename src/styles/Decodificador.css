@@ -1,0 +1,61 @@
+.body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body h1 {
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    background-color: #F3F6F9;
+    min-height: 250px;
+}
+
+.main .instructions, .form-body {
+    padding: 20px;
+}
+
+.body .title {
+    width: 100%;
+    background-color: #0077FF;
+    color: #FFFFFF;  
+}
+
+.form-body {
+    width: 75%;
+    margin: 20px auto;
+}
+
+.result-viewer {
+    width: 50%;
+    max-width: 800px;
+    min-width: 400px;
+    padding: 20px 0;
+}
+
+.form-body .form-button-container {
+    display: flex;
+     justify-content: center;
+     gap: 20px;
+}
+
+.result {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.result-viewer {
+    padding: 5px;
+}
+
+.result-viewer > pre {
+    background-color: #F3F6F9;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 80px;
+}
