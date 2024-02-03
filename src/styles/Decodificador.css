@@ -6,24 +6,22 @@
     align-items: center;
 }
 
-.body h1 {
-    text-align: center;
-}
-
 .main {
     width: 100%;
-    background-color: #F3F6F9;
     min-height: 250px;
+    padding: 20px;
 }
 
 .main .instructions, .form-body {
     padding: 20px;
 }
 
-.body .title {
+.header {
     width: 100%;
-    background-color: #0077FF;
-    color: #FFFFFF;  
+    height: 100%;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    text-align: center;
 }
 
 .form-body {
@@ -54,8 +52,9 @@
 }
 
 .result-viewer > pre {
-    background-color: #F3F6F9;
+    background-color: var(--white-color);
     padding: 20px;
+    margin: 10px;
     border-radius: 10px;
-    min-height: 80px;
+    min-height: 150px;
 }

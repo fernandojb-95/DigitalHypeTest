@@ -48,9 +48,6 @@ const Decodificador = () => {
 
 	return (
 		<div className="body">
-			<section className="title">
-				<h1>{etiquetas.title}</h1>
-			</section>
 			<section className="main">
 			<Row>
 				<Col xs={24} sm={24} md={10}>
