@@ -4,6 +4,10 @@ import * as etiquetas from "../constants/etiquetas";
 import { STRING_VALIDATION } from "../constants/constants";
 
 const FormDecode = ({handleSubmit, handleClear, form}) => {
+	const handleChange = e => {
+		const newVal = e.target.value.replace(/\s/g, '');
+			form.setFieldValue('encodedString', newVal)
+	}
 	return (
 		<Form layout="vertical" onFinish={handleSubmit} form={form}>
 			<Form.Item
@@ -11,9 +15,10 @@ const FormDecode = ({handleSubmit, handleClear, form}) => {
 			label={etiquetas.inputLabel}
 			rules={[
 				{required: true, message: "Debes ingresar la cadena"},
-				{pattern: STRING_VALIDATION, message: "La cadena tiene caractéres especiales" }]}
+				{pattern: STRING_VALIDATION, message: "La cadena tiene caractéres especiales" }]
+			}
 			>
-				<Input />
+				<Input onChange={handleChange} />
 			</Form.Item>
 			<Form.Item>
 				<div className="form-button-container">
