@@ -1,8 +1,21 @@
-# React + Vite
+# Decodificador de cadena (Prueba DigitalHype)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En este repositorio se tiene alojado el código referente a la prueba técnica de DigitalHype que es un decodificador de cadena
 
-Currently, two official plugins are available:
+## Tecnologías usadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para la codificación del reto se ocupó lo siguiente:
+- ReactJS
+- Vite
+- Ant Design
+
+## Instalación
+
+Si quieres observar el reto de forma local bastará con descargar el proyecto y correr los siguientes comandos
+
+```bash
+npm install
+npm run dev
+```
+## Visualización
+Se puede observar el reto desde la siguiente liga: https://gleaming-kulfi-6ac64d.netlify.app/
