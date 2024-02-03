@@ -14,7 +14,8 @@ const Decodificador = () => {
 
 	const handleSubmit = data => {
 		setResult("");
-		const decodedArray = data?.encodedString.split(/0+/);
+		const splitedArray = data?.encodedString.split(/0+/);
+		const decodedArray = splitedArray.filter(e => e !== "")
 		if(decodedArray.length !== 3) {
 			setError(true);
 			return "";

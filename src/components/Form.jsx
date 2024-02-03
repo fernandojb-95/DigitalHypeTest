@@ -1,6 +1,7 @@
 import { Input, Button, Form } from "antd";
 import PropTypes from "prop-types";
 import * as etiquetas from "../constants/etiquetas";
+import { STRING_VALIDATION } from "../constants/constants";
 
 const FormDecode = ({handleSubmit, handleClear, form}) => {
 	return (
@@ -8,7 +9,9 @@ const FormDecode = ({handleSubmit, handleClear, form}) => {
 			<Form.Item
 			name="encodedString"
 			label={etiquetas.inputLabel}
-			rules={[{required: true, message: "Debes ingresar la cadena"}]}
+			rules={[
+				{required: true, message: "Debes ingresar la cadena"},
+				{pattern: STRING_VALIDATION, message: "La cadena tiene caractéres especiales" }]}
 			>
 				<Input />
 			</Form.Item>
